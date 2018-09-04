@@ -6,8 +6,8 @@ import (
 	"net/mail"
 	"strings"
 
-	"github.com/antony360/caldav-go/icalendar/properties"
-	"github.com/antony360/caldav-go/utils"
+	"github.com/mikelcom/caldav-go/icalendar/properties"
+	"github.com/mikelcom/caldav-go/utils"
 )
 
 var _ = log.Print

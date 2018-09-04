@@ -8,8 +8,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/antony360/caldav-go/http"
-	"github.com/antony360/caldav-go/utils"
+	"github.com/mikelcom/caldav-go/http"
+	"github.com/mikelcom/caldav-go/utils"
 )
 
 var _ = log.Print

@@ -3,8 +3,8 @@ package components
 import (
 	"time"
 
-	"github.com/antony360/caldav-go/icalendar/values"
-	"github.com/antony360/caldav-go/utils"
+	"github.com/mikelcom/caldav-go/icalendar/values"
+	"github.com/mikelcom/caldav-go/utils"
 )
 
 type Event struct {
@@ -23,6 +23,9 @@ type Event struct {
 
 	// specifies the date and time that a calendar component ends.
 	DateEnd *values.DateTime `ical:"dtend,omitempty"`
+
+	// specifies when the calendar component begins.
+	DateEndFull *values.DateTimeFullDay `ical:"dtend;value=date,omitempty"`
 
 	// specifies a positive duration of time.
 	Duration *values.Duration `ical:",omitempty"`
@@ -83,7 +86,7 @@ type Event struct {
 
 	// defines an "Attendee" within a calendar component.
 	Attendees        []*values.AttendeeContact `ical:",omitempty"`
-	AttendeeContacts []values.AttendeeContact  `ical:"attendee,omitempty"`
+	AttendeeContacts []*values.AttendeeContact `ical:"attendee,omitempty"`
 
 	// defines the categories for a calendar component.
 	Categories *values.CSV `ical:",omitempty"`

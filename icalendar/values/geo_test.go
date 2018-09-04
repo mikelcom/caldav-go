@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/antony360/caldav-go/icalendar"
+	"github.com/mikelcom/caldav-go/icalendar"
 	. "gopkg.in/check.v1"
 )
 
